@@ -1,0 +1,24 @@
+While a byte can hold a letter or symbol, a bit is the smallest unit of storage, storing just one binary digit. The standard number of bits in a byte is eight, but that number can vary from system to system, depending on the hardware.
+
+AND (&):
+Performs a bitwise AND operation between corresponding bits of two integers.
+The result is 1 if both bits are 1, otherwise, it's 0.
+Example: 1010 & 1100 = 1000
+OR (|):
+Performs a bitwise OR operation between corresponding bits of two integers.
+The result is 1 if at least one of the bits is 1, otherwise, it's 0.
+Example: 1010 | 1100 = 1110
+XOR (^):
+Performs a bitwise XOR (exclusive OR) operation between corresponding bits of two integers.
+The result is 1 if the bits are different, otherwise, it's 0.
+Example: 1010 ^ 1100 = 0110
+NOT (~):
+Performs a bitwise NOT operation on each bit of an integer, flipping 0s to 1s and vice versa.
+Example: ~1010 = 0101
+Left Shift (<<):
+Shifts the bits of a number to the left by a specified number of positions.
+Example: 1010 << 2 = 101000 (Shifts two positions to the left)
+Right Shift (>>):
+Shifts the bits of a number to the right by a specified number of positions.
+Example: 1010 >> 2 = 10 (Shifts two positions to the right)
+
