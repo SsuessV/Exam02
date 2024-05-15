@@ -1,14 +1,15 @@
+//this goes into the header file.
 typedef struct    s_list
 {
     struct s_list *next;
     void          *data;
 }                 t_list;
 
-int	ft_list_size(t_list *begin_list)
-{
-	int i = 0;
-	while (begin_list[i] != NULL)
-			i++;
-	i--;
-	return (i);
-}		
+int ft_list_size(t_list *begin_list) {
+    int count = 0;
+    while (begin_list != NULL) {
+        count++;
+        begin_list = begin_list->next;
+    }
+    return count;
+}
