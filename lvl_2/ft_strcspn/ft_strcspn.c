@@ -1,0 +1,29 @@
+#include <stddef.h>
+
+size_t  ft_strcspn(const char *s, const char *reject)
+{
+	int i = 0;
+	int j;
+	while (s[i] != '\0')
+	{
+		j =0;
+		while (reject[j] != '\0')
+		{
+			if(s[i] == reject[j])
+				return (i);
+			j++;
+		}
+		i++;
+	}
+	return (i);
+}
+//#include <string.h>
+//#include <stdio.h>
+//
+//int main(void)
+//{
+	//char *s = "hello world";
+	//char *reject = "world";
+	//printf ("%ld\n", strcspn(s, reject));
+	//printf ("%ld\n", ft_strcspn(s, reject));
+//}
